@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* 팀 로고, 팀 약속, 소개 */
+.header {
+    height: 350px;
+    padding: 30px;
+}
+.team_logo, .team_intro, .team_promise {
+    background-color: green;
+    border: 1px solid black;
+    display: inline-block;
+    height: 300px;
+    color: white;
+    padding: 10px;
+}
+.team_intro {
+    width: 35%;
+    float: left;
+}
+.team_logo {
+    width: 20%;
+    float: left;
+    margin-left: 5%;
+}
+.team_promise {
+    width: 35%;
+    float: right;
+}
+
+
+
+/* 개인 팀원 카드 */
+.main {
+    padding: 30px;
+}
+.card {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background: #fff;
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+.card-img-top {
+    height: 180px;
+    width: 100px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+
+/* 이장현 */
+/* 카드 본체 */
+.modal-header {
+    background-color: rgb(121, 201, 141);
+}
+.modal-body {
+    max-height: fit-content;
+    overflow-y: auto;
+}
+.tab-content {
+    height: 620px;
+    padding: 10px;
+}
+
+.Profile_Body_L {
+        width: 400px;
+        height: 700px;
+        border-color: #e2e2e2;
+        background-image: url('./imgs/Jh/111.jpg');
+        backdrop-filter: blur(20px);
+        border: 2px solid rgba(252, 244, 244, 0.842);
+        margin: 0px auto 0px auto;
+        padding: 20px;
+        box-shadow: 0px 0px 3px 0px gray;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        position: fixed;    
+}
+
+
+.Profile_Img {
+    height: 200px;
+    border: none;
+    position: relative;
+}
+
+
+.Profile_Page {
+    text-decoration: none;
+    color: white;
+    position: relative
+}
+
+/* 직위 */
+.Profile_Name > .badge {
+    font-size: 14px; /* 원하는 크기로 조정 */
+    margin-bottom: 9px;
+    font-weight: normal;
+}
+
+.Profile_Name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.P_Name {
+    width: 100px;
+    background-color: (0, 0, 0, 1);
+    backdrop-filter: blur(20px);
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid rgba(56, 53, 53, 0.842);
+    box-shadow: 0px 0px 10px 0px rgb(124, 123, 123);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.Profile_Info {
+    width: 350px;
+    height: 271px;
+    margin-top: 20px;
+    background-color: (0, 0, 0, 1);
+    border: 1px solid rgba(56, 53, 53, 0.842);
+    box-shadow: 0px 0px 10px 0px gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+}
+
+.Profile_Info_Body {
+    margin-bottom: 20px;
+}
+
+.tag1 {
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag2 {
+    list-style-type: none;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*블로그 버튼*/
+.Link_Btn {
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.LK1 {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none; 
+}
+
+.LK2 {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none; 
+}
+
+.LK3 {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none; 
+}
+
+
+.Link_Btn img {
+    height: 40px;
+    width: 40px;
+}
+
+
+
+.Profile_Body_R {
+    height: 700px;
+    width: 700px; 
+    float: right;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(252, 244, 244, 0.842);
+    margin: 0px auto 0px auto;
+    box-shadow: 0px 0px 3px 0px gray;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./imgs/Jh/back2.jpg');
+
+}
+
+.Profile_Page_R {
+    position: relative;
+    width: 600px;
+    height: 550px;
+    background-color: (0, 0, 0, 1);
+    border: 1px solid rgba(56, 53, 53, 0.842);
+    box-shadow: 0px 0px 10px 0px gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+}
+
+
+.tag1_R {
+    color: white;
+    list-style-type: none;
+}
+
+.tag1_R, .btn {
+    display: inline-block;
+}
+
+.Profile_Page_R > .button {
+    position: fixed; 
+}

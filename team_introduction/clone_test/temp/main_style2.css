@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* 팀 로고, 팀 약속, 소개 */
+.header {
+    height: 350px;
+    padding: 30px;
+}
+
+.team_logo,
+.team_intro,
+.team_promise {
+    background-color: green;
+    border: 1px solid black;
+    display: inline-block;
+    height: 300px;
+    color: white;
+    padding: 10px;
+}
+
+.team_intro {
+    width: 35%;
+    float: left;
+}
+
+.team_logo {
+    width: 20%;
+    float: left;
+    margin-left: 5%;
+}
+
+.team_promise {
+    width: 35%;
+    float: right;
+}
+
+
+
+/* 개인 팀원 카드 */
+.main {
+    padding: 30px;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background: #fff;
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+.card-img-top {
+    height: 180px;
+    width: 100px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+
+/* 이장현 */
+/* 카드 본체 */
+.jcard {
+    width: 20rem;
+    height: 800px;
+
+    margin: 50px auto 0px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid black;
+    outline-style: outset;
+}
+
+/* 카드 이미지 */
+.jcard>img {
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+/* 카드 이름 */
+.jcard-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto 0px auto;
+}
+
+
+.jcard-text {
+    border-radius: 10px;
+
+    margin: 50px auto 0px auto;
+    padding: 30px;
+
+    border: 1px solid black;
+}
+
+.linkbutton {
+    padding: 20px;
+    margin-right: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* 모달 창 */
+/* .modal {
+    background-color: gray;
+    position:absolute;
+    display:none;
+
+    justify-content: center;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+    opacity: 0.9;
+}
+
+.modal_body {
+    border: 1px solid black;
+}
+
+.modal_content {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    opacity: 1.5;
+} */
+
+
+/*엄혜인*/
+/*이미지 상자 */
+.aboutmeEom {
+    width: 400px;
+    border-color: #81BEF7;
+    background-color: white;
+    background: rgba(255, 255, 255, -1);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin: 0px auto 0px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 3px 0px #81BEF7;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    max-height: 600px;
+}
+
+.aboutmeEom .imageEom {
+    width: 200px;
+    height: 300px;
+}
+
+.imageEom {
+    margin: 60px;
+}
+
+.aboutmeEom h1 {
+    font-size: 30px;
+}
+
+/*소개 상자 */
+.introductionEom {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    ;
+    align-items: center;
+    position: relative;
+}
+
+.introductionEom p {
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+/*블로그 버튼*/
+.archivingEom {
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.githubeEom {
+    background-color: white;
+    border: none;
+}
+
+.naverblogEom {
+    background-color: white;
+    border: none;
+
+}
+
+.archivingEom img {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+
+
+/*나의 소개 부분 아코디언*/
+
+.mystyleEom {
+    min-height: 10%;
+    min-width: 20%;
+    align-items: center;
+    justify-content: center;
+    background: #81BEF7;
+    padding: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+}
+
+.mystyleEom_accordion {
+    width: 600px;
+    max-height: 100%;
+    position: relative;
+
+}
+
+.mystyleEom_accordion input {
+    display: none;
+}
+
+.personalityEom {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+.mystyleEom h1 {
+    font-size: 20px;
+}
+
+.accordion_head_1 .accordion_btn1 {
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px #81BEF7;
+    width: 600px;
+}
+
+
+#palette_icon {
+    font-size: 20px;
+    margin-right: 15px;
+    color: navy;
+}
+
+.accordion-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+/*자바스크립트 해야됨 height 120px이면 accordion_body height는 0px
+.accordion_body{
+    height: 120px;
+    overflow: hidden;
+}*/
+
+.accordion_text {
+    box-shadow: 0px 0px 3px 0px #81BEF7;
+    background: rgba(255, 255, 255, -1);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 15px 20px;
+    color: white;
+}
+
+/*나의 장점*/
+.accordion_head_2 .accordion_btn2 {
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px #81BEF7;
+    width: 600px;
+}
+
+#smile_icon {
+    font-size: 20px;
+    margin-right: 15px;
+    color: navy;
+}
+
+.AdvantagesEom {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+
+/*나의 협업스타일*/
+.accordion_head_3 .accordion_btn3 {
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px #81BEF7;
+    width: 600px;
+}
+
+#group_icon {
+    font-size: 20px;
+    margin-right: 15px;
+    color: navy;
+}
+
+.CooperationEom {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+/*자바스크립트 해야됨 height 120px이면 accordion_body height는 0px 반응형도 해야됨
+:is(#mbtiEom #Advantages, #Cooperation):checked + .personalityEom .accordion_body {
+    height: 120px;
+
+}
+*/

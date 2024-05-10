@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* 팀 로고, 팀 약속, 소개 */
+header {
+    background-image: url("./imgs/background_night.png");
+    background-repeat : no-repeat;
+    background-size : cover;
+    height: 100vh;
+    width: 100vw;
+}
+.header {
+    height: 350px;
+    padding: 30px;
+}
+.team_logo > img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 360px;
+    height: 120px;
+}
+.header_card {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 45%;
+    height: 42vh;
+}
+.mac_btn {
+    width: 80px;
+    height: 20px;
+    margin-bottom: 3px;
+}
+
+
+
+
+/* 개인 팀원 카드 */
+.main {
+    background-image: url("./imgs/background_night_2.png");
+    background-repeat : no-repeat;
+    background-size : cover;
+    padding: 80px 30px 30px 30px;
+    height: 80vh;
+}
+.member_card {
+    padding: 20px 20px 0px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background: #fff;
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+}
+.member_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+.card-img-top {
+    height: 180px;
+    width: 100px;
+    margin: auto;
+    border-radius: 50%;
+}
+.main_mbti_intro {
+    height: 80px;
+}
+.about {
+    margin: 0px 28% 0px 32%;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* 댓글 기능 CSS */
+.footer {
+    background-image: url("./imgs/background_night_2.png");
+    background-size : contain;
+    padding-top: 30px;
+}
+.comment_box_title_box {
+    width: 300px;
+    height: auto;
+    margin: 30px auto 40px auto;
+}
+.comment_box_title {
+    color: #fff;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+.comment_input_box {
+    width: 50%;
+    height: 230px;
+    margin: 0px auto 20px auto;
+}
+.comment_name {
+    border: 1.5px solid black;
+    font-size: 20px;
+}
+.comment_textarea{
+    resize: none; 
+    margin-bottom: 10px;
+    border: 1.5px solid black;
+    font-size: 20px;
+}
+.comment_btn {
+    float: right;
+}
+.comment_list {
+    width: 50%;
+    height: auto;
+    padding: 10px 10px 20px 10px;
+    margin: 0px auto 0px auto;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.comment {
+    width: auto;
+    height: 100px;
+}
+.comment_left {
+    float: left;
+    width: 70%;
+}
+.commenter_info {
+    display: block;
+    position: relative;
+}
+.comment_img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    position: absolute;
+    margin-top: 0px;
+}
+.commenter_and_time {
+    display: inline-block;
+    margin-left: 75px;
+}
+.commenter {
+    display: block;
+    font-size: 17px;
+}
+.comment_time {
+    display: block;
+    margin-top: -10px;
+}
+.comment_content {
+    display: block;
+    margin-left: 10px;
+    font-size: 17px;
+}
+.comment_right {
+    float: right;
+    width: 20%;
+    text-align: right;
+    padding-top: 22px;
+}
+.comment_delete_btn {
+    margin-right: 10px;
+}
+
+
+
+
+
+/* 김정찬 모달 */
+.modal-header {
+    background-color: rgb(121, 201, 141);
+}
+.modal-body {
+    max-height: fit-content;
+    overflow-y: auto;
+}
+.tab-content {
+    height: 540px;
+    padding: 10px;
+}
+.modal1_body_left {
+    border: 2px solid black;
+    float: left;
+    width: 400px;
+    padding: 20px 10px 10px 10px;
+    border-radius: 8px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modal1_body_left_img {
+    width: 100px;
+    height: 180px;
+}
+.modal1_body_left_footer > a {
+    text-decoration: none;
+}
+.github_icon {
+    width: 53px;
+    height: 53px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+.velog_icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.modal1_body_right {
+    float: right;
+    width: 60%;
+}
+
+
+
+/* 홍성빈 모달 */
+.modal12_header {
+    background-color: gray;
+}
+.btn12 {
+    position: relative;
+    right:20px;
+    bottom: 20px;
+
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+}
+.modalbutton {
+    padding: 20px 20px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 60px;
+    left: 40px;
+
+    background-image: url(imgs/깃허브버튼.png);
+    background-position: center;
+    background-size: cover;
+} 
+.modalbutton2 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+
+    padding: 20px 20px;
+    top: 10px;
+    left: 110px;
+    background-image: url(imgs/네이버버튼.png);
+    background-position: center;
+    background-size: cover;
+}
+.textarea1 {
+    position: relative;
+    top : 0px;
+    left: 50px;
+}
+.modal2_body {
+    position: relative;
+    top:100px;
+    margin-left: 200px;
+}
+
+.accordion-item {
+    position: relative;
+    bottom: 530px;
+    right: 100px;
+    padding: 20px;
+    margin-left: 500px;
+}
+
+
+
+
+
+/* 엄혜인 모달 */
+/*이미지 상자 */
+.modal3_header {
+    background-color: #81BEF7;
+    font-weight: bold;
+}
+.aboutmeEom {
+    width: 400px;
+    border-color: #81BEF7;
+    background-color: white;
+    background: rgba(255, 255, 255, -1);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin: 0px auto 0px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 3px 0px #81BEF7;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    max-height: 600px;
+}
+
+.aboutmeEom .imageEom {
+    width: 200px;
+    height: 300px;
+}
+
+.imageEom {
+    margin: 60px;
+}
+
+.aboutmeEom h1 {
+    font-size: 30px;
+}
+
+/*소개 상자 */
+.introductionEom {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    ;
+    align-items: center;
+    position: relative;
+}
+
+.introductionEom p {
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+/*블로그 버튼*/
+.archivingEom {
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.githubeEom {
+    background-color: white;
+    border: none;
+}
+
+.naverblogEom {
+    background-color: white;
+    border: none;
+
+}
+
+.archivingEom img {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+
+
+/*나의 소개 부분 아코디언*/
+
+.mystyleEom {
+    /* min-height: 10%;
+    min-width: 20%; */
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    background: #81BEF7;
+    padding: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    /* max-height: 100%; */
+    justify-content: flex-end
+}
+
+.mystyleEom_accordion {
+    width: 600px;
+    max-height: 100%;
+    position: relative;
+
+}
+
+.mystyleEom_accordion input {
+    display: none;
+}
+
+.personalityEom {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+.mystyleEom h1 {
+    font-size: 20px;
+}
+
+.accordion_head_1 .accordion_btn1 {
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px #81BEF7;
+    width: 600px;
+}
+
+
+#palette_icon {
+    font-size: 20px;
+    margin-right: 15px;
+    color: navy;
+}
+
+.accordion-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+/*자바스크립트 해야됨 height 120px이면 accordion_body height는 0px
+.accordion_body{
+    height: 120px;
+    overflow: hidden;
+}*/
+
+.accordion_text {
+    box-shadow: 0px 0px 3px 0px #81BEF7;
+    background: rgba(255, 255, 255, -1);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 15px 20px;
+    color: white;
+}
+
+/*나의 장점*/
+.accordion_head_2 .accordion_btn2 {
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px #81BEF7;
+    width: 600px;
+}
+
+#smile_icon {
+    font-size: 20px;
+    margin-right: 15px;
+    color: navy;
+}
+
+.AdvantagesEom {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+
+/*나의 협업스타일*/
+.accordion_head_3 .accordion_btn3 {
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px #81BEF7;
+    width: 600px;
+}
+
+#group_icon {
+    font-size: 20px;
+    margin-right: 15px;
+    color: navy;
+}
+
+.CooperationEom {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+
+
+/* 이장현 모달 */
+.modal4_header {
+    background-color: #e53b44;
+    color: white;
+    font-weight: bold;
+}
+.modal-body {
+    max-height: fit-content;
+    overflow-y: auto;
+}
+.tab-content {
+    height: 620px;
+    padding: 10px;
+}
+
+.Profile_Body_L {
+        width: 400px;
+        height: 700px;
+        border-color: #e2e2e2;
+        background-image: url('./imgs/Jh/back1.jpg');
+        backdrop-filter: blur(20px);
+        border: 2px solid rgba(252, 244, 244, 0.842);
+        margin: 0px auto 0px auto;
+        padding: 20px;
+        box-shadow: 0px 0px 3px 0px gray;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        float: left; 
+}
+
+
+.Profile_Img {
+    height: 200px;
+    border: none;
+    position: relative;
+}
+
+
+.Profile_Page {
+    text-decoration: none;
+    color: white;
+    position: relative
+}
+
+/* 직위 */
+.Profile_Name > .badge {
+    font-size: 14px; /* 원하는 크기로 조정 */
+    margin-bottom: 9px;
+    font-weight: normal;
+}
+
+.Profile_Name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.P_Name {
+    width: 100px;
+    background-color: (0, 0, 0, 1);
+    backdrop-filter: blur(20px);
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid rgba(56, 53, 53, 0.842);
+    box-shadow: 0px 0px 10px 0px rgb(124, 123, 123);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.Profile_Info {
+    width: 350px;
+    height: 271px;
+    margin-top: 20px;
+    background-color: (0, 0, 0, 1);
+    border: 1px solid rgba(56, 53, 53, 0.842);
+    box-shadow: 0px 0px 10px 0px gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+}
+
+.Profile_Info_Body {
+    margin-bottom: 20px;
+}
+
+.tag1 {
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag2 {
+    list-style-type: none;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*블로그 버튼*/
+.Link_Btn {
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.LK1 {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none; 
+}
+
+.LK2 {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none; 
+}
+
+.LK3 {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none; 
+}
+
+
+.Link_Btn img {
+    height: 40px;
+    width: 40px;
+}
+
+
+
+.Profile_Body_R {
+    height: 700px;
+    width: 700px; 
+    float: right;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(252, 244, 244, 0.842);
+    margin: 0px auto 0px auto;
+    box-shadow: 0px 0px 3px 0px gray;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./imgs/Jh/back2.jpg');
+
+}
+
+.Profile_Page_R {
+    position: relative;
+    width: 600px;
+    height: 550px;
+    background-color: (0, 0, 0, 1);
+    border: 1px solid rgba(56, 53, 53, 0.842);
+    box-shadow: 0px 0px 10px 0px gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+}
+
+
+.tag1_R {
+    color: white;
+    list-style-type: none;
+}
+
+.tag1_R, .btn {
+    display: inline-block;
+}
+
+.Profile_Page_R > .button {
+    position: fixed; 
+}
+
+
+
+
+/* 박순호 */
+.modal5_body_left {
+    margin-bottom: 20px;
+}
+.modal5_body_right {
+    height: 370px;
+}
+.modal5_header {
+    background-color: #fff;
+}

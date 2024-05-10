@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9to9 팀 소개 페이지</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main_style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!--혜인 소개페이지에 아이콘-->
+</head>
+
+
+
+<body>
+    <header>
+        <div class="header">
+            <div class="team_logo">
+                <img src="./imgs/Team_logo.png">
+            </div>
+            <div class="card header_card">
+                <h5 class="card-header"><img class="mac_btn" src="./imgs/mac_btn.png"></h5>
+                <div class="card-body">
+                    <h3 class="card-title"><b>우리 팀 소개</b></h3><br>
+                    <p class="card-text" style="font-size: 22px; font-weight: bold; line-height: 2.0;">
+                        저희 9to9조는 Node.js 5기 웹개발과 게임서버개발을 공부하며 <br>
+                        프로젝트를 만드는 다양한 목표를 가진 팀원들이 모였습니다. <br>
+                        서로 성장하고 취업을 목표로, 기본 코딩능력과 팀워크를 키우며 <br>
+                        1인분 이상의 개발자로서 함께 발전할 것입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+            <div class="col">
+                <div class="card member_card">
+                    <img src="./imgs/김정찬_아바타.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">팀장 김정찬</h5>
+                        <br>
+                        <p class="main_mbti_intro">MBTI : ISFJ <br> 소개 : 나는야 백엔드 개발자!</p>
+                        <button class="about btn btn-outline-warning" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal1">더 보기</button>
+                        <!-- 더 보기 클릭 시 이 모달이 누구꺼인지 전달하기 위한 input 태그 -->
+                        <input type="hidden" value="김정찬">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card member_card">
+                    <img src="./imgs/홍성빈_아바타2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">팀원 홍성빈</h5>
+                        <br>
+                        <p class="main_mbti_intro">MBTI : ESFJ <br> 소개 : 나는야 개발자!</p>
+                        <button class="about btn btn-outline-warning" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2">더 보기</button>
+                        <input type="hidden" value="홍성빈">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card member_card" style="padding: 20px 20px 0px 20px;">
+                    <img src="./imgs/hyein/엄혜인_아바타.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">팀원 엄혜인</h5>
+                        <br>
+                        <p class="main_mbti_intro">MBTI : ISFP <br> 소개 : 호기심많고 새로운 도전을 즐기는 개발자!</p>
+                        <button class="about btn btn-outline-warning" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal_3">더 보기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card member_card">
+                    <img src="./imgs/Jh/ljh.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">팀원 이장현</h5>
+                        <br>
+                        <p class="main_mbti_intro">MBTI : ESTP <br> 소개 : 나는야 개발자!</p>
+                        <button class="about btn btn-outline-warning" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal4">더 보기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card member_card">
+                    <img src="./imgs/박순호_아바타.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">팀원 박순호</h5>
+                        <br>
+                        <p class="main_mbti_intro">MBTI : ISTP <br> 소개 : 나는야 개발자!</p>
+                        <button class="about btn btn-outline-warning" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal5">더 보기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%; height: 5px; background-color: rgb(255, 215, 83);"></div>
+    <div class="footer">
+        <!-- 댓글 기능 구현 -->
+        <div class="comment_box">
+            <div class="comment_box_title_box">
+                <h1 class="comment_box_title">&lt;방명록&gt;</h1>
+            </div>
+            <div class="comment_input_box">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control comment_name" id="floatingInputName" placeholder="홍길동">
+                    <label for="floatingInputName">이름</label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control comment_textarea" placeholder="Leave a comment here"
+                        id="floatingTextarea2Content" style="height: 100px; font-size: 20px;"></textarea>
+                    <label for="floatingTextarea2Content">응원 한 마디 남겨주세요!!</label>
+                </div>
+                <button type="button" id="comment_upload_btn" class="btn btn-primary comment_btn">등록하기</button>
+                <input type="hidden" value="김정찬">
+            </div>
+            <div class="comment_list" id="comment_list">
+                <!-- 댓글 리스트가 들어갈 자리 -->
+            </div>
+        </div>
+        <div style="width: 100%; height: 50px;"></div>
+    </div>
+
+
+    
+    <!-- 모달1 (김정찬) -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    </div>
+    <!-- 모달2 (홍성빈) -->
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    </div>
+
+    <!-- 모달3 (엄혜인) -->
+    <div class="modal fade" id="exampleModal_3" tabindex="-1" aria-labelledby="exampleModalLabel_3" aria-hidden="true">
+    </div>
+
+    <!-- 모달4 (이장현) -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+    </div>
+    
+    <!-- 모달5 (박순호) -->
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="module" src="./main_script.js"></script>
+</body>
+
+</html>
